@@ -109,6 +109,8 @@ const Product = () => {
         <img
           src={ProductHero}
           alt="Industrial products background"
+          fetchpriority="high"
+          decoding="sync"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40"></div>
@@ -149,7 +151,9 @@ const Product = () => {
               <img 
                 src={product.image} 
                 alt={product.name}
-                className="h-40 sm:h-48 w-full object-cover group-hover:scale-110 transition duration-500"
+                loading="lazy"
+                decoding="async"
+                className="h-56 sm:h-48 w-full object-contain sm:object-cover bg-[#090f18] sm:bg-transparent group-hover:scale-110 transition duration-500"
               />
               <div className="p-4 sm:p-5 relative z-20 bg-[#1a2332]">
                 <h3 className="font-bold text-sm sm:text-base mb-3 line-clamp-2 hover:text-yellow-400 transition">
@@ -218,7 +222,9 @@ const Product = () => {
                 <img 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-40 sm:h-48 object-cover rounded-lg mb-4 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-500"
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-56 sm:h-48 object-contain sm:object-cover bg-[#090f18] sm:bg-transparent rounded-lg mb-4 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-500"
                 />
                 <div className="flex items-start justify-between mb-3 sm:mb-4">
                   <h3 className="font-bold text-sm sm:text-base lg:text-lg flex-1 group-hover:text-yellow-400 transition duration-300">
