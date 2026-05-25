@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home'
 import Product from './common/Product'
-import Contact from './pages/Contect'
+import Contact from './pages/Contect' // Filename remains same for now but name is cleaner
 import AboutUs from './pages/AboutUs'
 import RequestQuote from './pages/RequestQuote'
 import ScrollToTop from './utils/ScrollToTop'

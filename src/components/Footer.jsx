@@ -17,9 +17,14 @@ const Footer = () => {
               Premier provider of industrial equipment, logistics solutions, and retail management services across the UK.
             </p>
             <div className="flex gap-3">
-              {['FB', 'LI', 'TW', 'YT'].map(social => (
-                <a key={social} href="#" className="w-10 h-10 rounded-lg bg-[#1a2332] flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group">
-                  <span className="text-[10px] font-extrabold group-hover:text-yellow-400">{social}</span>
+              {[
+                { name: 'FB', url: '#' },
+                { name: 'LI', url: '#' },
+                { name: 'IG', url: '#' },
+                { name: 'WA', url: 'https://wa.me/442012345678' }
+              ].map(social => (
+                <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#1a2332] flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group">
+                  <span className="text-[10px] font-extrabold group-hover:text-yellow-400">{social.name}</span>
                 </a>
               ))}
             </div>
@@ -53,14 +58,14 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-bold mb-6 flex items-center">
               <span className="w-2 h-5 bg-yellow-400 mr-3 rounded-sm"></span>
-              Solutions
+              Social Media
             </h3>
             <ul className="space-y-4">
               {[
-                'Structural & Masonry',
-                'Drylining & Access',
-                'Site Safety Products',
-                'Site Handover Services'
+                'Instagram',
+                'Linkdin',
+                'Facebook',
+                'Twitter',
               ].map(item => (
                 <li key={item}>
                   <Link to="/products" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
