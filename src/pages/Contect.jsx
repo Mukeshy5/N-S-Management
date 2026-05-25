@@ -29,7 +29,7 @@ const Contact = () => {
           {[
             { label: 'Customer Support', value: '+44 (0) 20 1234 5678', sub: 'Mon-Fri 8am-6pm', icon: '📞' },
             { label: 'Email Inquiries', value: 'info@nsmanagement.co.uk', sub: '24/7 Online Support', icon: '✉️' },
-            { label: 'Headquarters', value: '123 Business Avenue, UK', sub: 'Visit us for a coffee', icon: '📍' }
+            { label: 'Headquarters', value: '19 Galloway Street, Liverpool L7 6PD', sub: 'Visit us for a coffee', icon: '📍' }
           ].map((item, index) => (
             <div key={index} className="bg-[#1a2332] p-8 rounded-xl border border-gray-700 shadow-xl hover:border-yellow-400/50 transition-all duration-300 text-center group">
               <div className="w-14 h-14 bg-yellow-400/10 rounded-2xl flex items-center justify-center text-3xl mb-6 mx-auto text-yellow-400 group-hover:scale-110 transition duration-300">
@@ -73,31 +73,19 @@ const Contact = () => {
             {/* Live Map */}
             <div className="bg-[#1a2332] h-[350px] rounded-2xl border border-gray-700 overflow-hidden relative group">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988670833!2d-0.2664033959336528!3d51.52873980502755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1716634800000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.118239088654!2d-2.946761023190889!3d53.412850972312686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b213ce60bedfb%3A0xc3b7a59d997f37dd!2s19%20Galloway%20St%2C%20Liverpool%20L7%206PD%2C%20UK!5e0!3m2!1sen!2sin!4v1716634800000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="UK Distribution Centre Map"
+                title="19 Galloway Street, Liverpool L7 6PD Map"
                 className="grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
               ></iframe>
             </div>
 
-            <div className="pt-8 border-t border-gray-700">
-              <h3 className="text-lg font-bold mb-6 flex items-center">
-                <span className="w-4 h-[2px] bg-yellow-400 mr-3"></span>
-                Follow our updates
-              </h3>
-              <div className="flex gap-4">
-                {['FB', 'LI', 'TW', 'YT'].map(social => (
-                  <div key={social} className="w-12 h-12 rounded-xl bg-[#1a2332] flex items-center justify-center border border-gray-700 hover:border-yellow-400 hover:bg-yellow-400/5 cursor-pointer transition-all duration-300 group">
-                    <span className="text-xs font-extrabold group-hover:text-yellow-400 transition tracking-tighter">{social}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

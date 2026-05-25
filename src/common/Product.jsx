@@ -1,51 +1,92 @@
 import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import ProductHero from '../assets/ProductHero.png'
+import img1 from '../assets/img1.jpeg'
+import img2 from '../assets/img2.jpeg'
+import img3 from '../assets/img3.jpeg'
+import img4 from '../assets/img4.jpeg'
+import img5 from '../assets/img5.jpeg'
+import img6 from '../assets/img6.jpeg'
+import img7 from '../assets/img7.jpeg'
+import img8 from '../assets/img8.jpeg'
+import img9 from '../assets/img9.jpeg'
+import img10 from '../assets/img10.jpeg'
+import img11 from '../assets/img11.jpeg'
+import img12 from '../assets/img12.jpeg'
+import img13 from '../assets/img13.jpeg'
+import img14 from '../assets/img14.jpeg'
+import img15 from '../assets/img15.jpeg'
+import img16 from '../assets/img16.jpeg'
+import img17 from '../assets/img17.jpeg'
+import img18 from '../assets/img18.jpeg'
+import img19 from '../assets/img19.jpeg'
+import img20 from '../assets/img20.jpeg'
+import img21 from '../assets/img21.jpeg'
+import img22 from '../assets/img22.jpeg'
+import img23 from '../assets/img23.jpeg'
+import img24 from '../assets/img24.jpeg'
 
 const Product = () => {
   const navigate = useNavigate()
   const [selectedCategory, setSelectedCategory] = useState('all')
 
   const productData = {
-    'Structural & Masonry Products': [
-      { name: 'Multi-Width Insulated Cavity Closer', image: 'https://images.unsplash.com/photo-1590059132718-500fd17a534c?q=80&w=800&auto=format&fit=crop', tag: 'Bestseller' },
-      { name: 'Pre-Formed Cavity Tray System', image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Bulk Bag Building Sand (850kg)', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Premium Portland Cement 25kg', image: 'https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Grade A Oak Structural Blocks', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Galvanized High-Tensile Binding Wire', image: 'https://images.unsplash.com/photo-1530124566582-ab6127771b0b?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Industrial Masonry Fastener Pack', image: 'https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?q=80&w=800&auto=format&fit=crop' }
+    'Interior Design & Home Decor': [
+      { name: 'Modern Interior Design Service', image: img1, tag: 'Premium' },
+      { name: 'Home Decoration Essentials', image: img2, tag: 'Trending' },
+      { name: 'Professional Painting Services', image: img3, tag: 'Popular' },
     ],
-    'Drylining & Access Products': [
-      { name: 'Metal Faced Plaster Access Panel', image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=800&auto=format&fit=crop', tag: 'New' },
-      { name: 'Plasterboards', image: 'https://images.unsplash.com/photo-1604147706283-d7119b5b822c?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Louvre Systems / Louvre Boards', image: 'https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop' }
+    'Retail Solutions': [
+      { name: 'Smart POS System', image: img4, tag: 'Essential' },
+      { name: 'Retail Store Fixtures', image: img5 },
+      { name: 'Inventory Management System', image: img6 }
     ],
-    'Site Safety Products': [
-      { name: 'Hi-Vis Safety Duo (Vest & Helmet)', image: 'https://images.unsplash.com/photo-1513467655676-56ae80fd972b?q=80&w=800&auto=format&fit=crop', tag: 'Essential' },
-      { name: 'Executive Hi-Vis Safety Vest', image: 'https://images.unsplash.com/photo-1591955506264-3f5a6834570a?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Fire-Rated Cavity Stop Socks', image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Industrial Tie-Down Straps', image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop' }
+    'Construction Tools & Kits': [
+      { name: 'Heavy Duty Power Tools', image: img7, tag: 'Bestseller' },
+      { name: 'Professional Construction Kit', image: img8 },
+      { name: 'Basic Masonry Kit', image: img9 }
     ],
-    'Site Handover & Maintenance': [
-      { name: 'Professional Cleaning Materials', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Site Finishing Supplies', image: 'https://images.unsplash.com/photo-1581092162384-8987c17d4718?q=80&w=800&auto=format&fit=crop' },
-      { name: 'Maintenance Products', image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop' }
+    'Structural & Masonry': [
+      { name: 'Multi-Width Insulated Cavity Closer', image: img10, tag: 'Bestseller' },
+      { name: 'Fire-Rated Cavity Stop Socks', image: img11 },
+      { name: 'Bulk Bag Building Sand (850kg)', image: img12 },
+      { name: 'Premium Portland Cement 25kg', image: img13 },
+      { name: 'Grade A Oak Structural Blocks', image: img14 },
+      { name: 'Metal Faced Plaster Access Panel', image: img15, tag: 'New' }
+    ],
+    'Hardware & Fasteners': [
+      { name: 'Galvanized High-Tensile Binding Wire', image: img16 },
+      { name: 'Industrial Masonry Fastener Pack', image: img17 },
+      { name: 'Industrial Tie-Down Straps', image: img18 }
+    ],
+    'Safety & PPE': [
+      { name: 'Hi-Vis Safety Duo (Vest & Helmet)', image: img19, tag: 'Essential' },
+      { name: 'Executive Hi-Vis Safety Vest', image: img20 },
+      { name: 'Heavy-Duty Impact Work Gloves', image: img21 },
+      { name: 'Anti-Fog Wide Vision Goggles', image: img22 },
+      { name: 'Carbon Fiber Safety Helmet', image: img23 },
+      { name: 'Titanium Toe Work Boots', image: img24, tag: 'New' }
     ]
   }
 
   const featuredProducts = [
-    { name: 'Multi-Width Insulated Cavity Closer', image: 'https://images.unsplash.com/photo-1590059132718-500fd17a534c?q=80&w=800', tag: 'Bestseller' },
-    { name: 'Fire-Rated Cavity Stop Socks', image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?q=80&w=800' },
-    { name: 'Pre-Formed Cavity Tray System', image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=800' },
-    { name: 'Bulk Bag Building Sand (850kg)', image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800' },
-    { name: 'Galvanized High-Tensile Binding Wire', image: 'https://images.unsplash.com/photo-1530124566582-ab6127771b0b?q=80&w=800' },
-    { name: 'Premium Portland Cement 25kg', image: 'https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800' },
-    { name: 'Grade A Oak Structural Blocks', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800' },
-    { name: 'Industrial Masonry Fastener Pack', image: 'https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?q=80&w=800' },
-    { name: 'Metal Faced Plaster Access Panel', image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=800' },
-    { name: 'Industrial Tie-Down Straps', image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800' },
-    { name: 'Hi-Vis Safety Duo (Vest & Helmet)', image: 'https://images.unsplash.com/photo-1513467655676-56ae80fd972b?q=80&w=800' },
-    { name: 'Executive Hi-Vis Safety Vest', image: 'https://images.unsplash.com/photo-1591955506264-3f5a6834570a?q=80&w=800' }
+    { name: 'Multi-Width Insulated Cavity Closer', image: img10, tag: 'Bestseller' },
+    { name: 'Fire-Rated Cavity Stop Socks', image: img11 },
+    { name: 'Bulk Bag Building Sand (850kg)', image: img12 },
+    { name: 'Galvanized High-Tensile Binding Wire', image: img16 },
+    { name: 'Premium Portland Cement 25kg', image: img13 },
+    { name: 'Grade A Oak Structural Blocks', image: img14, tag: 'Popular' },
+    { name: 'Industrial Masonry Fastener Pack', image: img17 },
+    { name: 'Industrial Tie-Down Straps', image: img18 },
+    { name: 'Metal Faced Plaster Access Panel', image: img15, tag: 'New' },
+    { name: 'Hi-Vis Safety Duo (Vest & Helmet)', image: img19, tag: 'Essential' },
+    { name: 'Executive Hi-Vis Safety Vest', image: img20 },
+    { name: 'Heavy-Duty Impact Work Gloves', image: img21 },
+    { name: 'Anti-Fog Wide Vision Goggles', image: img22 },
+    { name: 'Carbon Fiber Safety Helmet', image: img23, tag: 'Premium' },
+    { name: 'Titanium Toe Work Boots', image: img24, tag: 'New' },
+    { name: 'Smart POS System', image: img4, tag: 'Essential' },
+    { name: 'Modern Interior Design Service', image: img1, tag: 'Premium' },
   ]
 
   const getAllProducts = () => {
@@ -64,37 +105,37 @@ const Product = () => {
   return (
     <div className="bg-[#0c1624] text-white min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative h-[250px] sm:h-[400px] lg:h-[500px] w-full overflow-hidden">
+      <section className="relative h-[300px] sm:h-[350px] md:h-[400px] lg:h-[500px] w-full overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop"
+          src={ProductHero}
           alt="Industrial products background"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
-          <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-2 sm:mb-3">Our Catalog</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
+          <p className="text-yellow-400 text-[10px] sm:text-xs md:text-sm font-semibold mb-2 sm:mb-3 uppercase tracking-widest">Our Catalog</p>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-2 sm:mb-4">
             Premium Products for Every <span className="text-yellow-400">Industry Need</span>
           </h1>
-          <p className="text-gray-300 text-xs sm:text-sm lg:text-base max-w-2xl">
+          <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl px-2 sm:px-0">
             High-quality solutions for construction, safety, and maintenance requirements. Browse our comprehensive product catalog.
           </p>
         </div>
       </section>
 
       {/* Featured Products */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
-        <div className="mb-10 sm:mb-12">
-          <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-2">Featured Solutions</p>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+        <div className="mb-8 sm:mb-10 md:mb-12 text-center sm:text-left">
+          <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-2 uppercase tracking-wide">Featured Solutions</p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-3 sm:mb-4">
             Our Best-Selling Products
           </h2>
-          <p className="text-gray-400 text-xs sm:text-sm lg:text-base">
+          <p className="text-gray-400 text-xs sm:text-sm md:text-base lg:text-lg">
             Trusted by professionals across construction, transport, and retail sectors.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
           {featuredProducts.map((product, index) => (
             <div
               key={index}
@@ -114,6 +155,9 @@ const Product = () => {
                 <h3 className="font-bold text-sm sm:text-base mb-3 line-clamp-2 hover:text-yellow-400 transition">
                   {product.name}
                 </h3>
+                <p className="text-gray-400 text-xs mb-4 line-clamp-2">
+                  Premium industrial solution designed for heavy-duty professional performance.
+                </p>
                 <button 
                   onClick={() => navigate('/request-quote')}
                   className="w-full bg-yellow-400 text-black py-2 rounded font-semibold hover:bg-yellow-300 transition text-xs sm:text-sm">
@@ -126,17 +170,17 @@ const Product = () => {
       </section>
 
       {/* Category Filter */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 max-w-7xl mx-auto">
-        <div className="mb-8 sm:mb-10">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto">
+        <div className="mb-8 sm:mb-10 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 sm:mb-8 text-center sm:text-left">
             Browse by <span className="text-yellow-400">Category</span>
           </h2>
 
           {/* Category Buttons */}
-          <div className="flex flex-wrap gap-2 sm:gap-3 mb-8 sm:mb-10">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-3 md:gap-4 mb-8 sm:mb-10 md:mb-12">
             <button
               onClick={() => setSelectedCategory('all')}
-              className={`px-3 sm:px-5 py-2 rounded-lg font-semibold transition text-xs sm:text-sm ${
+              className={`px-3 sm:px-5 md:px-6 py-2 sm:py-2.5 rounded-lg font-semibold transition text-xs sm:text-sm md:text-base ${
                 selectedCategory === 'all'
                   ? 'bg-yellow-400 text-black'
                   : 'bg-[#1a2332] text-white hover:border-yellow-400 border border-gray-700'
@@ -160,7 +204,7 @@ const Product = () => {
           </div>
 
           {/* Products List */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             {getDisplayedProducts().map((product, index) => (
               <div
                 key={index}
@@ -197,19 +241,19 @@ const Product = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-yellow-400/10 to-blue-600/10 border border-yellow-400/30 rounded-lg p-6 sm:p-10 lg:p-14 text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">
+      <section className="py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6 md:px-8">
+        <div className="max-w-4xl mx-auto bg-gradient-to-r from-yellow-400/10 to-blue-600/10 border border-yellow-400/30 rounded-xl sm:rounded-2xl p-6 sm:p-10 md:p-12 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-3 sm:mb-4">
             Need a Custom Solution?
           </h2>
-          <p className="text-gray-300 text-xs sm:text-sm lg:text-base mb-6 sm:mb-8">
+          <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg mb-6 sm:mb-8 px-2 sm:px-0">
             Our team specializes in tailored product solutions for construction, transport, and retail sectors.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Link to="/contact" className="bg-yellow-400 text-black px-6 sm:px-8 py-3 rounded font-bold hover:bg-yellow-300 transition text-sm sm:text-base flex items-center justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+            <Link to="/contact" className="w-full sm:w-auto bg-yellow-400 text-black px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-bold hover:bg-yellow-300 transition text-sm sm:text-base">
               Contact Sales
             </Link>
-            <Link to="/about" className="border-2 border-yellow-400 text-yellow-400 px-6 sm:px-8 py-3 rounded font-bold hover:bg-yellow-400/10 transition text-sm sm:text-base flex items-center justify-center">
+            <Link to="/about" className="w-full sm:w-auto border-2 border-yellow-400 text-yellow-400 px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg font-bold hover:bg-yellow-400/10 transition text-sm sm:text-base">
               Download Catalog
             </Link>
           </div>

@@ -1,31 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import heroImage from '../assets/hero.png'
 
 const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[300px] sm:h-[500px] lg:h-[750px] w-full overflow-hidden">
+      <section className="relative h-[500px] sm:h-[600px] lg:h-[750px] w-full overflow-hidden">
         <img 
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop"
+          src={heroImage}
           className="w-full h-full object-cover"
           alt="Building supplies"
         />
         <div className="absolute inset-0 bg-black/60"></div>
         <div className="absolute inset-0 flex items-center z-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 text-white w-full relative z-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 text-white w-full relative z-20 text-center sm:text-left">
             <p className="text-yellow-400 uppercase tracking-widest font-semibold mb-2 sm:mb-4 text-xs sm:text-sm">
-              Construction | Transport | Retail Solutions
+              Construction, Transport and retail, interior design
             </p>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight mb-4">
               COMPLETE BUSINESS SOLUTIONS.
               <span className="text-yellow-400 block"> NATIONWIDE SERVICES.</span>
             </h1>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-200 max-w-2xl mb-6">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-200 max-w-2xl mb-6 mx-auto sm:mx-0">
               Premier provider of equipment, logistics solutions, and retail management services
-              for construction, transport and retail industry professionals.
+              for construction, transport, retail, and interior design industry professionals.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center sm:justify-start">
               <Link to="/products" className="bg-yellow-400 text-black px-5 sm:px-7 py-3 sm:py-4 rounded font-semibold hover:bg-yellow-300 transition text-sm sm:text-base flex items-center justify-center">
                 Browse Products
               </Link>
@@ -39,7 +40,7 @@ const Home = () => {
 
       {/* Stats */}
       <section className="bg-[#111827] text-white py-8 sm:py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
           <div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">4+</h2>
             <p className="mt-1 sm:mt-2 text-gray-300 text-xs sm:text-sm">Years Experience</p>
@@ -119,7 +120,7 @@ const Home = () => {
             {/* Card 3 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
               <img
-                src="https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?q=80&w=1200&auto=format&fit=crop"
                 className="h-56 w-full object-cover"
                 alt="Retail Solutions"
               />
@@ -139,19 +140,19 @@ const Home = () => {
             {/* Card 4 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop"
                 className="h-56 w-full object-cover"
-                alt="Consulting & Support"
+                alt="Interior Design"
               />
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">
-                  Consulting & Support
+                  Interior Design
                 </h3>
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
-                  Business consulting, training & 24/7 customer support services.
+                  Professional interior design solutions for commercial and residential spaces.
                 </p>
-                <Link to="/about" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
-                  Learn More →
+                <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
+                  Explore Products →
                 </Link>
               </div>
             </div>
@@ -176,11 +177,11 @@ const Home = () => {
             </Link>
           </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5 lg:gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-5 lg:gap-6">
             {/* Product 1 */}
             <div className="bg-white rounded-xl p-3 sm:p-4 shadow hover:shadow-lg transition">
               <img
-                src="https://images.unsplash.com/photo-1513467655676-56ae80fd972b?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1000&auto=format&fit=crop"
                 className="h-24 sm:h-32 lg:h-36 w-full object-cover rounded"
                 alt="Safety Helmets & PPE"
               />

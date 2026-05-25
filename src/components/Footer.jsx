@@ -16,18 +16,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Premier provider of industrial equipment, logistics solutions, and retail management services across the UK.
             </p>
-            <div className="flex gap-3">
-              {[
-                { name: 'FB', url: '#' },
-                { name: 'LI', url: '#' },
-                { name: 'IG', url: '#' },
-                { name: 'WA', url: 'https://wa.me/442012345678' }
-              ].map(social => (
-                <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-[#1a2332] flex items-center justify-center border border-gray-700 hover:border-yellow-400 transition-all duration-300 group">
-                  <span className="text-[10px] font-extrabold group-hover:text-yellow-400">{social.name}</span>
-                </a>
-              ))}
-            </div>
+            
           </div>
 
           {/* Column 2: Quick Links */}
@@ -79,7 +68,7 @@ const Footer = () => {
                 <span className="text-yellow-400 mt-1">📍</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Headquarters</p>
-                  <p className="text-sm font-semibold leading-tight">London, Industrial Zone 4, UK</p>
+                  <p className="text-sm font-semibold leading-tight">19 Galloway Street, Liverpool, UK, L7 6PD</p>
                 </div>
               </div>
             </div>
