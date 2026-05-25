@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" onClick={closeMenu} className="text-2xl sm:text-3xl font-bold flex-shrink-0">
-          N&S <span className="text-yellow-400">Management</span>
+          N&S <span className="text-yellow-400">Management</span> <span className="text-white text-sm ml-1">LTD</span>
         </Link>
 
         {/* Mobile Menu Button */}
