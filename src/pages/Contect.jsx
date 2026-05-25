@@ -38,42 +38,8 @@ const Contect = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          {/* Contact Form Implementation */}
-          <div className="lg:col-span-7 bg-[#1a2332] p-8 sm:p-10 rounded-2xl border border-gray-700 shadow-2xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/5 rounded-full -mr-16 -mt-16 blur-3xl"></div>
-            
-            <h2 className="text-2xl font-bold mb-8 flex items-center">
-              <span className="w-2 h-8 bg-yellow-400 mr-4 rounded-full shadow-[0_0_15px_rgba(250,204,21,0.3)]"></span>
-              Send us an Inquiry
-            </h2>
-            
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">First Name</label>
-                  <input type="text" placeholder="First Name" className="w-full bg-[#0c1624] border border-gray-700 p-4 rounded-xl focus:border-yellow-400 outline-none transition focus:ring-4 ring-yellow-400/10" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">Last Name</label>
-                  <input type="text" placeholder="Last Name" className="w-full bg-[#0c1624] border border-gray-700 p-4 rounded-xl focus:border-yellow-400 outline-none transition focus:ring-4 ring-yellow-400/10" />
-                </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">Business Email</label>
-                <input type="email" placeholder="example@company.com" className="w-full bg-[#0c1624] border border-gray-700 p-4 rounded-xl focus:border-yellow-400 outline-none transition focus:ring-4 ring-yellow-400/10" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em]">How can we help?</label>
-                <textarea rows="5" placeholder="Describe your requirements..." className="w-full bg-[#0c1624] border border-gray-700 p-4 rounded-xl focus:border-yellow-400 outline-none transition focus:ring-4 ring-yellow-400/10 resize-none"></textarea>
-              </div>
-              <button className="w-full bg-yellow-400 text-black py-4 rounded-xl font-extrabold hover:bg-yellow-300 transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-yellow-400/20 uppercase tracking-widest text-sm">
-                Submit Message
-              </button>
-            </form>
-          </div>
-
           {/* Contact Info */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-12 space-y-8">
             <div className="bg-[#1a2332] p-8 rounded-2xl border border-gray-700">
               <h3 className="text-xl font-bold mb-6 text-yellow-400">Operating Hours</h3>
               <div className="space-y-4">

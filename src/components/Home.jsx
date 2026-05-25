@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -25,12 +26,12 @@ const Home = () => {
               for construction, transport and retail industry professionals.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-5">
-              <button className="bg-yellow-400 text-black px-5 sm:px-7 py-3 sm:py-4 rounded font-semibold hover:bg-yellow-300 transition text-sm sm:text-base">
+              <Link to="/products" className="bg-yellow-400 text-black px-5 sm:px-7 py-3 sm:py-4 rounded font-semibold hover:bg-yellow-300 transition text-sm sm:text-base flex items-center justify-center">
                 Browse Products
-              </button>
-              <button className="border border-white px-5 sm:px-7 py-3 sm:py-4 rounded font-semibold hover:bg-white hover:text-black transition text-sm sm:text-base">
+              </Link>
+              <Link to="/request-quote" className="border border-white px-5 sm:px-7 py-3 sm:py-4 rounded font-semibold hover:bg-white hover:text-black transition text-sm sm:text-base flex items-center justify-center">
                 Request a Quote
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -89,9 +90,9 @@ const Home = () => {
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
                   Safety gear, tools, and heavy machinery solutions.
                 </p>
-                <a href="#" className="text-yellow-500 font-semibold text-sm sm:text-base">
+                <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
                   Explore Products →
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -109,9 +110,9 @@ const Home = () => {
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
                   Fleet management, tracking systems & supply chain solutions.
                 </p>
-                <a href="#" className="text-yellow-500 font-semibold text-sm sm:text-base">
+                <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
                   Explore Products →
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -129,9 +130,9 @@ const Home = () => {
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
                   Point of sale systems, inventory management & store fixtures.
                 </p>
-                <a href="#" className="text-yellow-500 font-semibold text-sm sm:text-base">
+                <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
                   Explore Products →
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -149,9 +150,9 @@ const Home = () => {
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
                   Business consulting, training & 24/7 customer support services.
                 </p>
-                <a href="#" className="text-yellow-500 font-semibold text-sm sm:text-base">
-                  Explore Products →
-                </a>
+                <Link to="/about" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
+                  Learn More →
+                </Link>
               </div>
             </div>
           </div>
@@ -170,9 +171,9 @@ const Home = () => {
                 Trusted Solutions for Every Industry.
               </h2>
             </div>
-            <a href="#" className="text-yellow-500 font-semibold text-sm sm:text-base whitespace-nowrap">
+            <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base whitespace-nowrap">
               View All Products →
-            </a>
+            </Link>
           </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-5 lg:gap-6">
@@ -186,9 +187,9 @@ const Home = () => {
               <h3 className="font-bold mt-3 sm:mt-4 text-sm sm:text-base">
                 Safety Helmets & PPE
               </h3>
-              <button className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
+              <Link to="/request-quote" className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
                 Add to Quote →
-              </button>
+              </Link>
             </div>
 
             {/* Product 2 */}
@@ -201,9 +202,9 @@ const Home = () => {
               <h3 className="font-bold mt-3 sm:mt-4 text-sm sm:text-base">
                 Fleet Tracking System
               </h3>
-              <button className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
+              <Link to="/request-quote" className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
                 Add to Quote →
-              </button>
+              </Link>
             </div>
 
             {/* Product 3 */}
@@ -216,9 +217,9 @@ const Home = () => {
               <h3 className="font-bold mt-3 sm:mt-4 text-sm sm:text-base">
                 POS System Pro
               </h3>
-              <button className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
+              <Link to="/request-quote" className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
                 Add to Quote →
-              </button>
+              </Link>
             </div>
 
             {/* Product 4 */}
@@ -231,9 +232,9 @@ const Home = () => {
               <h3 className="font-bold mt-3 sm:mt-4 text-sm sm:text-base">
                 Inventory Management
               </h3>
-              <button className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
+              <Link to="/request-quote" className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
                 Add to Quote →
-              </button>
+              </Link>
             </div>
 
             {/* Product 5 */}
@@ -246,9 +247,9 @@ const Home = () => {
               <h3 className="font-bold mt-3 sm:mt-4 text-sm sm:text-base">
                 Power Tools Kit
               </h3>
-              <button className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
+              <Link to="/request-quote" className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
                 Add to Quote →
-              </button>
+              </Link>
             </div>
 
             {/* Product 6 */}
@@ -261,9 +262,9 @@ const Home = () => {
               <h3 className="font-bold mt-3 sm:mt-4 text-sm sm:text-base">
                 Customer Analytics Suite
               </h3>
-              <button className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
+              <Link to="/request-quote" className="mt-2 sm:mt-3 lg:mt-4 text-yellow-500 font-semibold text-xs sm:text-sm hover:text-yellow-600">
                 Add to Quote →
-              </button>
+              </Link>
             </div>
           </div>
         </div>

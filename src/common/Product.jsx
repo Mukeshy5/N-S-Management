@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Product = () => {
   const navigate = useNavigate()
@@ -201,12 +201,12 @@ const Product = () => {
             Our team specializes in tailored product solutions for construction, transport, and retail sectors.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <button className="bg-yellow-400 text-black px-6 sm:px-8 py-3 rounded font-bold hover:bg-yellow-300 transition text-sm sm:text-base">
+            <Link to="/contact" className="bg-yellow-400 text-black px-6 sm:px-8 py-3 rounded font-bold hover:bg-yellow-300 transition text-sm sm:text-base flex items-center justify-center">
               Contact Sales
-            </button>
-            <button className="border-2 border-yellow-400 text-yellow-400 px-6 sm:px-8 py-3 rounded font-bold hover:bg-yellow-400/10 transition text-sm sm:text-base">
+            </Link>
+            <Link to="/about" className="border-2 border-yellow-400 text-yellow-400 px-6 sm:px-8 py-3 rounded font-bold hover:bg-yellow-400/10 transition text-sm sm:text-base flex items-center justify-center">
               Download Catalog
-            </button>
+            </Link>
           </div>
         </div>
       </section>
