@@ -25,9 +25,11 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="aspect-video bg-gradient-to-br from-yellow-400/20 to-blue-600/20 rounded-xl border border-gray-700 flex items-center justify-center">
-              <span className="text-gray-500 italic">Company Profile Image</span>
-            </div>
+            <img 
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop"
+              alt="N&S Management Headquarters"
+              className="w-full aspect-video object-cover rounded-xl border border-gray-700 shadow-2xl"
+            />
             <div className="absolute -bottom-6 -right-6 hidden sm:block w-32 h-32 bg-yellow-400 rounded-lg p-4 text-black font-bold">
               Our Mission: Excellence in Every Service.
             </div>

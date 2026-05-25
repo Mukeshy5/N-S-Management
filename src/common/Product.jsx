@@ -17,7 +17,7 @@ const Product = () => {
     ],
     'Drylining & Access Products': [
       { name: 'Metal Faced Plaster Access Panel', image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=800&auto=format&fit=crop', tag: 'New' },
-      { name: 'Plasterboards', image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop' },
+      { name: 'Plasterboards', image: 'https://images.unsplash.com/photo-1604147706283-d7119b5b822c?q=80&w=800&auto=format&fit=crop' },
       { name: 'Louvre Systems / Louvre Boards', image: 'https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?q=80&w=800&auto=format&fit=crop' }
     ],
     'Site Safety Products': [
@@ -64,7 +64,12 @@ const Product = () => {
   return (
     <div className="bg-[#0c1624] text-white min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative h-[250px] sm:h-[400px] lg:h-[500px] w-full overflow-hidden bg-gradient-to-r from-[#0c1624] to-[#1a2332]">
+      <section className="relative h-[250px] sm:h-[400px] lg:h-[500px] w-full overflow-hidden">
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop"
+          alt="Industrial products background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
           <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-2 sm:mb-3">Our Catalog</p>

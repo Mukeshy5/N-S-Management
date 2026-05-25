@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0c1624] text-white pt-16 sm:pt-20 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20 mb-16">
           {/* Column 1: Brand & Identity */}
           <div className="space-y-6">
             <Link to="/" className="inline-block">
@@ -54,29 +54,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Product Segments */}
-          <div>
-            <h3 className="text-lg font-bold mb-6 flex items-center">
-              <span className="w-2 h-5 bg-yellow-400 mr-3 rounded-sm"></span>
-              Social Media
-            </h3>
-            <ul className="space-y-4">
-              {[
-                'Instagram',
-                'Linkdin',
-                'Facebook',
-                'Twitter',
-              ].map(item => (
-                <li key={item}>
-                  <Link to="/products" className="text-gray-400 hover:text-yellow-400 transition-colors text-sm">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4: Contact Support */}
+          {/* Column 3: Contact Support */}
           <div>
             <h3 className="text-lg font-bold mb-6 flex items-center">
               <span className="w-2 h-5 bg-yellow-400 mr-3 rounded-sm"></span>
@@ -111,7 +89,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-gray-800 py-8 flex flex-col sm:flex-row justify-between items-center gap-6">
           <p className="text-gray-500 text-xs text-center sm:text-left leading-relaxed">
-            © 2026 N&S MANAGEMENT LTD. All Rights Reserved. <br className="sm:hidden" /> Registered in England & Wales.
+            © 2022 N&S MANAGEMENT LTD. All Rights Reserved. <br className="sm:hidden" /> 
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-500 hover:text-yellow-400 text-[10px] uppercase font-bold tracking-[0.2em] transition-colors">Privacy Policy</a>

@@ -41,11 +41,11 @@ const Home = () => {
       <section className="bg-[#111827] text-white py-8 sm:py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
           <div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">15+</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">4+</h2>
             <p className="mt-1 sm:mt-2 text-gray-300 text-xs sm:text-sm">Years Experience</p>
           </div>
           <div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">500+</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">100+</h2>
             <p className="mt-1 sm:mt-2 text-gray-300 text-xs sm:text-sm">Business Clients</p>
           </div>
           <div>
@@ -99,7 +99,7 @@ const Home = () => {
             {/* Card 2 */}
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=1200&auto=format&fit=crop"
                 className="h-56 w-full object-cover"
                 alt="Transport & Logistics"
               />
@@ -180,7 +180,7 @@ const Home = () => {
             {/* Product 1 */}
             <div className="bg-white rounded-xl p-3 sm:p-4 shadow hover:shadow-lg transition">
               <img
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1513467655676-56ae80fd972b?q=80&w=1000&auto=format&fit=crop"
                 className="h-24 sm:h-32 lg:h-36 w-full object-cover rounded"
                 alt="Safety Helmets & PPE"
               />
@@ -195,7 +195,7 @@ const Home = () => {
             {/* Product 2 */}
             <div className="bg-white rounded-xl p-3 sm:p-4 shadow hover:shadow-lg transition">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000&auto=format&fit=crop"
                 className="h-24 sm:h-32 lg:h-36 w-full object-cover rounded"
                 alt="Fleet Tracking System"
               />
@@ -210,7 +210,7 @@ const Home = () => {
             {/* Product 3 */}
             <div className="bg-white rounded-xl p-3 sm:p-4 shadow hover:shadow-lg transition">
               <img
-                src="https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1000&auto=format&fit=crop"
                 className="h-24 sm:h-32 lg:h-36 w-full object-cover rounded"
                 alt="POS System Pro"
               />
@@ -225,7 +225,7 @@ const Home = () => {
             {/* Product 4 */}
             <div className="bg-white rounded-xl p-3 sm:p-4 shadow hover:shadow-lg transition">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop"
                 className="h-24 sm:h-32 lg:h-36 w-full object-cover rounded"
                 alt="Inventory Management"
               />
@@ -240,7 +240,7 @@ const Home = () => {
             {/* Product 5 */}
             <div className="bg-white rounded-xl p-3 sm:p-4 shadow hover:shadow-lg transition">
               <img
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1581147036324-c17ac41dfa6c?q=80&w=1000&auto=format&fit=crop"
                 className="h-24 sm:h-32 lg:h-36 w-full object-cover rounded"
                 alt="Power Tools Kit"
               />
@@ -255,7 +255,7 @@ const Home = () => {
             {/* Product 6 */}
             <div className="bg-white rounded-xl p-3 sm:p-4 shadow hover:shadow-lg transition">
               <img
-                src="https://images.unsplash.com/photo-1559056199-641a0ac8b3f4?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
                 className="h-24 sm:h-32 lg:h-36 w-full object-cover rounded"
                 alt="Customer Analytics Suite"
               />

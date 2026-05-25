@@ -1,11 +1,16 @@
 import React from 'react'
 
-const Contect = () => {
+const Contact = () => {
   return (
     <div className="bg-[#0c1624] text-white min-h-screen pt-20">
       {/* Hero Section */}
-      <section className="relative h-[250px] sm:h-[400px] flex items-center justify-center overflow-hidden bg-gradient-to-r from-[#0c1624] to-[#1a2332]">
-        <div className="absolute inset-0 bg-black/40"></div>
+      <section className="relative h-[250px] sm:h-[400px] flex items-center justify-center overflow-hidden">
+        <img 
+          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600&auto=format&fit=crop"
+          alt="Contact background"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 text-center px-4 max-w-3xl">
           <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-3 uppercase tracking-widest">Connect With Us</p>
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold mb-4">
@@ -38,8 +43,17 @@ const Contect = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          {/* Profile Image Section */}
+          <div className="lg:col-span-7">
+            <img 
+              src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop"
+              alt="N&S Management Corporate Office"
+              className="w-full h-full min-h-[400px] object-cover rounded-2xl border border-gray-700 shadow-2xl"
+            />
+          </div>
+
           {/* Contact Info */}
-          <div className="lg:col-span-12 space-y-8">
+          <div className="lg:col-span-5 space-y-8">
             <div className="bg-[#1a2332] p-8 rounded-2xl border border-gray-700">
               <h3 className="text-xl font-bold mb-6 text-yellow-400">Operating Hours</h3>
               <div className="space-y-4">
@@ -56,14 +70,19 @@ const Contect = () => {
               </div>
             </div>
 
-            {/* Map Placeholder */}
-            <div className="bg-[#1a2332] h-[280px] rounded-2xl border border-gray-700 overflow-hidden relative group">
-              <div className="absolute inset-0 bg-yellow-400/5 group-hover:bg-transparent transition duration-500"></div>
-              <div className="w-full h-full flex flex-col items-center justify-center">
-                <span className="text-5xl mb-3">📍</span>
-                <p className="text-gray-400 font-bold text-sm tracking-wide">UK DISTRIBUTION CENTRE</p>
-                <p className="text-gray-500 text-xs mt-1 italic">London, Industrial Zone 4</p>
-              </div>
+            {/* Live Map */}
+            <div className="bg-[#1a2332] h-[350px] rounded-2xl border border-gray-700 overflow-hidden relative group">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988670833!2d-0.2664033959336528!3d51.52873980502755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1716634800000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="UK Distribution Centre Map"
+                className="grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+              ></iframe>
             </div>
 
             <div className="pt-8 border-t border-gray-700">
@@ -86,4 +105,4 @@ const Contect = () => {
   )
 }
 
-export default Contect
+export default Contact
