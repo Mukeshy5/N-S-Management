@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Product = () => {
+  const navigate = useNavigate()
   const [selectedCategory, setSelectedCategory] = useState('all')
 
   const productData = {
@@ -107,7 +109,9 @@ const Product = () => {
                 <h3 className="font-bold text-sm sm:text-base mb-3 line-clamp-2 hover:text-yellow-400 transition">
                   {product.name}
                 </h3>
-                <button className="w-full bg-yellow-400 text-black py-2 rounded font-semibold hover:bg-yellow-300 transition text-xs sm:text-sm">
+                <button 
+                  onClick={() => navigate('/request-quote')}
+                  className="w-full bg-yellow-400 text-black py-2 rounded font-semibold hover:bg-yellow-300 transition text-xs sm:text-sm">
                   Add to Quote
                 </button>
               </div>
@@ -176,7 +180,9 @@ const Product = () => {
                 <p className="text-gray-400 text-xs sm:text-sm mb-5 line-clamp-2">
                   Premium industrial solution designed for heavy-duty professional performance and reliability.
                 </p>
-                <button className="w-full bg-yellow-400 text-black py-2 rounded font-semibold hover:bg-yellow-300 transition text-xs sm:text-sm">
+                <button 
+                  onClick={() => navigate('/request-quote')}
+                  className="w-full bg-yellow-400 text-black py-2 rounded font-semibold hover:bg-yellow-300 transition text-xs sm:text-sm">
                   Request Quote
                 </button>
               </div>

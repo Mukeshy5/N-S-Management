@@ -52,87 +52,93 @@ const RequestQuote = () => {
   ]
 
   return (
-    <div className="bg-[#0c1624] text-white min-h-screen pt-20">
+    <div className="bg-[#0c1624] text-white min-h-screen pt-16 sm:pt-20">
       {/* Hero Section */}
-      <section className="relative h-[250px] sm:h-[350px] lg:h-[400px] w-full overflow-hidden bg-gradient-to-r from-[#0c1624] to-[#1a2332]">
+      <section className="relative h-[220px] sm:h-[350px] lg:h-[450px] w-full overflow-hidden bg-gradient-to-r from-[#0c1624] to-[#1a2332]">
         <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute top-0 left-0 w-full h-full opacity-10">
+           <div className="absolute top-10 left-10 w-64 h-64 bg-yellow-400 rounded-full blur-3xl"></div>
+        </div>
         <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
-          <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-2 sm:mb-3">Get Your Custom Quote</p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
-            Request a <span className="text-yellow-400">Quote Today</span>
+          <p className="text-yellow-400 text-xs sm:text-sm font-bold mb-2 sm:mb-4 uppercase tracking-[0.3em]">Business Solutions</p>
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold mb-3 sm:mb-6">
+            Request <span className="text-yellow-400">Project Quote</span>
           </h1>
-          <p className="text-gray-300 text-xs sm:text-sm lg:text-base max-w-2xl">
-            Tell us about your requirements and our team will provide you with a customized quote within 24 hours.
+          <p className="text-gray-300 text-[10px] sm:text-sm lg:text-lg max-w-2xl leading-relaxed">
+            Providing tailored solutions for modern industries. Complete the form below and our consultants will reach out within 24 business hours.
           </p>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 max-w-5xl mx-auto">
+      <section className="py-10 sm:py-20 px-4 sm:px-6 max-w-7xl mx-auto relative z-10 -mt-10 sm:-mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
           {/* Form Section */}
           <div className="lg:col-span-2">
-            <div className="bg-[#1a2332] rounded-lg p-6 sm:p-8 border border-gray-700">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Quote Request Form</h2>
+            <div className="bg-[#1a2332] rounded-2xl p-6 sm:p-12 border border-gray-700 shadow-2xl shadow-black/50">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-8 flex items-center">
+                <span className="w-2 h-8 bg-yellow-400 mr-4 rounded-full"></span>
+                Submission Details
+              </h2>
               
               {submitted && (
-                <div className="mb-6 p-4 sm:p-5 bg-green-500/20 border border-green-500 rounded-lg text-green-200 text-sm sm:text-base">
-                  ✓ Thank you! Your quote request has been submitted successfully. We'll be in touch shortly!
+                <div className="mb-8 p-4 sm:p-6 bg-green-500/10 border border-green-500/50 rounded-xl text-green-400 text-sm sm:text-base animate-pulse">
+                  <span className="font-bold mr-2">Success!</span> Your request has been logged in our system.
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
                 {/* Name Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs sm:text-sm font-semibold mb-2">First Name *</label>
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">First Name *</label>
                     <input
                       type="text"
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm"
                       placeholder="John"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs sm:text-sm font-semibold mb-2">Last Name *</label>
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Last Name *</label>
                     <input
                       type="text"
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm"
                       placeholder="Doe"
                     />
                   </div>
                 </div>
 
                 {/* Email & Phone Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs sm:text-sm font-semibold mb-2">Email *</label>
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Email Address *</label>
                     <input
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm"
                       placeholder="john@example.com"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs sm:text-sm font-semibold mb-2">Phone *</label>
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Phone Number *</label>
                     <input
                       type="tel"
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm"
                       placeholder="+44 (0) 20 1234 5678"
                     />
                   </div>
@@ -140,28 +146,28 @@ const RequestQuote = () => {
 
                 {/* Company */}
                 <div>
-                  <label className="block text-xs sm:text-sm font-semibold mb-2">Company Name *</label>
+                  <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Organization *</label>
                   <input
                     type="text"
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm"
+                    className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm"
                     placeholder="Your Company Ltd"
                   />
                 </div>
 
                 {/* Product Category & Quantity Row */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-xs sm:text-sm font-semibold mb-2">Product Category *</label>
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Product Segment *</label>
                     <select
                       name="productCategory"
                       value={formData.productCategory}
                       onChange={handleChange}
                       required
-                      className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm cursor-pointer"
                     >
                       <option value="">Select Category</option>
                       {productCategories.map((cat, idx) => (
@@ -170,13 +176,13 @@ const RequestQuote = () => {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-xs sm:text-sm font-semibold mb-2">Estimated Quantity</label>
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Expected Volume</label>
                     <input
                       type="text"
                       name="quantity"
                       value={formData.quantity}
                       onChange={handleChange}
-                      className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm"
+                      className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm"
                       placeholder="e.g., 100 units"
                     />
                   </div>
@@ -184,62 +190,62 @@ const RequestQuote = () => {
 
                 {/* Message */}
                 <div>
-                  <label className="block text-xs sm:text-sm font-semibold mb-2">Additional Details</label>
+                  <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Scope of Work</label>
                   <textarea
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    rows="5"
-                    className="w-full px-3 sm:px-4 py-2 rounded bg-[#0c1624] border border-gray-600 text-white outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400/20 transition text-xs sm:text-sm resize-none"
-                    placeholder="Tell us more about your requirements, specific needs, or budget..."
+                    rows="4"
+                    className="w-full px-4 py-3 rounded-xl bg-[#0c1624] border border-gray-700 text-white outline-none focus:border-yellow-400 focus:ring-4 focus:ring-yellow-400/10 transition duration-300 text-sm resize-none"
+                    placeholder="Describe specific requirements or technical needs..."
                   ></textarea>
                 </div>
 
                 {/* Submit Button */}
                 <button
                   type="submit"
-                  className="w-full bg-yellow-400 text-black py-3 rounded font-bold hover:bg-yellow-300 transition text-sm sm:text-base"
+                  className="w-full bg-yellow-400 text-black py-4 rounded-xl font-extrabold hover:bg-yellow-300 transition-all duration-300 transform hover:-translate-y-1 shadow-lg shadow-yellow-400/20 uppercase tracking-[0.2em] text-sm"
                 >
-                  Submit Quote Request
+                  Request Pricing
                 </button>
               </form>
             </div>
           </div>
 
           {/* Side Info */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 space-y-6">
             <div className="space-y-6">
               {/* Quick Info Card 1 */}
-              <div className="bg-[#1a2332] rounded-lg p-6 border border-gray-700">
+              <div className="bg-[#1a2332] rounded-2xl p-8 border border-gray-700 shadow-xl hover:border-yellow-400/30 transition-all group">
                 <div className="text-2xl mb-3">⚡</div>
-                <h3 className="font-bold text-base sm:text-lg mb-2">Quick Response</h3>
-                <p className="text-gray-400 text-xs sm:text-sm">
+                <h3 className="font-bold text-lg mb-2 group-hover:text-yellow-400 transition">Rapid Turnaround</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
                   Get a personalized quote within 24 hours from our team.
                 </p>
               </div>
 
               {/* Quick Info Card 2 */}
-              <div className="bg-[#1a2332] rounded-lg p-6 border border-gray-700">
+              <div className="bg-[#1a2332] rounded-2xl p-8 border border-gray-700 shadow-xl hover:border-yellow-400/30 transition-all group">
                 <div className="text-2xl mb-3">💰</div>
-                <h3 className="font-bold text-base sm:text-lg mb-2">Best Pricing</h3>
-                <p className="text-gray-400 text-xs sm:text-sm">
+                <h3 className="font-bold text-lg mb-2 group-hover:text-yellow-400 transition">Volume Benefits</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
                   Competitive rates with volume discounts available.
                 </p>
               </div>
 
               {/* Quick Info Card 3 */}
-              <div className="bg-[#1a2332] rounded-lg p-6 border border-gray-700">
+              <div className="bg-[#1a2332] rounded-2xl p-8 border border-gray-700 shadow-xl hover:border-yellow-400/30 transition-all group">
                 <div className="text-2xl mb-3">📞</div>
-                <h3 className="font-bold text-base sm:text-lg mb-2">Support</h3>
-                <p className="text-gray-400 text-xs sm:text-sm">
+                <h3 className="font-bold text-lg mb-2 group-hover:text-yellow-400 transition">Expert Support</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
                   Call +44 (0) 20 1234 5678 for urgent requests.
                 </p>
               </div>
 
               {/* Why Choose Us */}
-              <div className="bg-gradient-to-br from-yellow-400/10 to-blue-600/10 border border-yellow-400/30 rounded-lg p-6">
-                <h3 className="font-bold text-base sm:text-lg mb-3">Why Choose N&S?</h3>
-                <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
+              <div className="bg-gradient-to-br from-yellow-400/10 to-blue-600/10 border border-yellow-400/30 rounded-2xl p-8">
+                <h3 className="font-bold text-lg mb-4">Why Partner With N&S?</h3>
+                <ul className="space-y-3 text-sm text-gray-300">
                   <li className="flex items-start gap-2">
                     <span className="text-yellow-400 font-bold">✓</span>
                     <span>15+ Years Industry Experience</span>
@@ -264,13 +270,13 @@ const RequestQuote = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#1a2332] mt-8">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-10 sm:mb-12">
-            Frequently Asked <span className="text-yellow-400">Questions</span>
+      <section className="py-20 sm:py-32 px-4 sm:px-6 bg-[#1a2332] border-t border-gray-800">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl sm:text-5xl font-extrabold text-center mb-16">
+            Information <span className="text-yellow-400">& Queries</span>
           </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
                 q: 'How long does it take to receive a quote?',
@@ -297,9 +303,9 @@ const RequestQuote = () => {
                 a: 'Yes, we provide delivery across the UK. Shipping costs will be included in your quote.'
               }
             ].map((faq, idx) => (
-              <div key={idx} className="bg-[#0c1624] p-5 sm:p-6 rounded-lg border border-gray-700">
-                <h3 className="font-bold text-sm sm:text-base mb-2 text-yellow-400">{faq.q}</h3>
-                <p className="text-gray-400 text-xs sm:text-sm">{faq.a}</p>
+              <div key={idx} className="bg-[#0c1624] p-6 sm:p-8 rounded-2xl border border-gray-700 hover:border-yellow-400/30 transition duration-300">
+                <h3 className="font-bold text-base mb-3 text-yellow-400">{faq.q}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>

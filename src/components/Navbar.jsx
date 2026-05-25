@@ -57,12 +57,7 @@ const Navbar = () => {
           <Link to="/about" onClick={closeMenu} className="block hover:text-yellow-400 py-2">
             About Us
           </Link>
-          <a href="#" onClick={closeMenu} className="block hover:text-yellow-400 py-2">
-            Trade Updates
-          </a>
-          <a href="#" onClick={closeMenu} className="block hover:text-yellow-400 py-2">
-            Success Stories
-          </a>
+        
           <Link to="/contact" onClick={closeMenu} className="block hover:text-yellow-400 py-2">
             Contact Us
           </Link>
