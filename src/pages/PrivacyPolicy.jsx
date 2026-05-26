@@ -61,7 +61,7 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-xl font-bold text-white mb-4">6. Contact Information</h2>
             <p>
-              If you have questions regarding this privacy policy, you may contact us at info@nsmanagement.co.uk or visit our registered office address at 19 Galloway Street, Liverpool, United Kingdom, L7 6PD.
+              If you have questions regarding this privacy policy, you may contact us at info@nsmanagement.co.uk or visit our registered address at 19 Galloway Street, Liverpool, United Kingdom, L7 6PD.
             </p>
           </section>
         </div>

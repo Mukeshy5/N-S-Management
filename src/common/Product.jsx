@@ -93,6 +93,25 @@ const Product = () => {
     return Object.values(productData).flat()
   }
 
+  const deriveTitleFromImage = (image) => {
+    try {
+      if (!image) return ''
+      const src = typeof image === 'string' ? image : String(image)
+      const parts = src.split('/')
+      const file = parts[parts.length - 1] || src
+      const name = file.replace(/\.[^/.]+$/, '')
+      return name.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase())
+    } catch (e) {
+      return ''
+    }
+  }
+
+  const getProductTitle = (product) => {
+    if (!product) return ''
+    if (product.name && product.name.trim().length > 0) return product.name
+    return deriveTitleFromImage(product.image)
+  }
+
   const getDisplayedProducts = () => {
     if (selectedCategory === 'all') {
       return getAllProducts()
@@ -150,14 +169,14 @@ const Product = () => {
               )}
               <img 
                 src={product.image} 
-                alt={product.name}
+                alt={getProductTitle(product)}
                 loading="lazy"
                 decoding="async"
                 className="h-56 sm:h-48 w-full object-contain sm:object-cover bg-[#090f18] sm:bg-transparent group-hover:scale-110 transition duration-500"
               />
               <div className="p-4 sm:p-5 relative z-20 bg-[#1a2332]">
                 <h3 className="font-bold text-sm sm:text-base mb-3 line-clamp-2 hover:text-yellow-400 transition">
-                  {product.name}
+                  {getProductTitle(product)}
                 </h3>
                 <p className="text-gray-400 text-xs mb-4 line-clamp-2">
                   Premium industrial solution designed for heavy-duty professional performance.
@@ -221,14 +240,14 @@ const Product = () => {
                 )}
                 <img 
                   src={product.image} 
-                  alt={product.name}
+                  alt={getProductTitle(product)}
                   loading="lazy"
                   decoding="async"
                   className="w-full h-56 sm:h-48 object-contain sm:object-cover bg-[#090f18] sm:bg-transparent rounded-lg mb-4 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition duration-500"
                 />
                 <div className="flex items-start justify-between mb-3 sm:mb-4">
                   <h3 className="font-bold text-sm sm:text-base lg:text-lg flex-1 group-hover:text-yellow-400 transition duration-300">
-                    {product.name}
+                    {getProductTitle(product)}
                   </h3>
                   <span className="ml-2 text-yellow-400 font-bold text-lg">→</span>
                 </div>

@@ -54,7 +54,7 @@ const Footer = () => {
                 <span className="text-yellow-400 mt-1">📞</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Phone Support</p>
-                  <p className="text-sm font-semibold">+44 (0) 20 1234 5678</p>
+                  <p className="text-sm font-semibold">07349049077</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -67,7 +67,7 @@ const Footer = () => {
               <div className="flex items-start gap-4">
                 <span className="text-yellow-400 mt-1">📍</span>
                 <div>
-                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Registered office address</p>
+                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Registered Address</p>
                   <p className="text-sm font-semibold leading-tight">19 Galloway Street, Liverpool, United Kingdom, L7 6PD</p>
                 </div>
               </div>

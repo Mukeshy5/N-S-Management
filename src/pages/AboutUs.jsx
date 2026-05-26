@@ -37,17 +37,20 @@ const AboutUs = () => {
             Our Core Values
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            {["Integrity", "Innovation", "Reliability"].map((value) => (
+            {[
+              { title: "Integrity", desc: "Building trust through transparent operations and ethical business practices in every sector we serve." },
+              { title: "Innovation", desc: "Utilizing advanced logistics technology and modern design methods to solve complex industrial challenges." },
+              { title: "Reliability", desc: "Ensuring consistent, high-quality service delivery and dependable support for nationwide projects." }
+            ].map((item) => (
               <div
-                key={value}
+                key={item.title}
                 className="p-4 border border-gray-700 rounded-lg hover:border-yellow-400 transition"
               >
                 <h3 className="text-xl font-bold text-yellow-400 mb-2">
-                  {value}
+                  {item.title}
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Committed to delivering the highest standards in everything we
-                  do.
+                  {item.desc}
                 </p>
               </div>
             ))}

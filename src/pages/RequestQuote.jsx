@@ -26,27 +26,27 @@ const RequestQuote = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               {/* Quick Info Card 1 */}
               <div className="bg-[#1a2332] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700 shadow-xl hover:border-yellow-400/30 transition-all group">
-                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">⚡</div>
-                <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Rapid Turnaround</h3>
+                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🏗️</div>
+                <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Construction & Structural</h3>
                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                  Fast processing of custom orders to keep your projects on schedule.
+                  Specialized structural materials and industrial equipment tailored for site-specific requirements.
                 </p>
               </div>
 
               {/* Quick Info Card 2 */}
               <div className="bg-[#1a2332] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700 shadow-xl hover:border-yellow-400/30 transition-all group">
-                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">💰</div>
-                <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Volume Benefits</h3>
+                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3"></div>
+                <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Logistics & Transport</h3>
                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                  Strategic pricing models designed for enterprise-scale operations.
+                  Nationwide fleet coordination and supply chain management optimized for operational efficiency.
                 </p>
               </div>
 
               <div className="bg-[#1a2332] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700 shadow-xl hover:border-yellow-400/30 transition-all group sm:col-span-2 md:col-span-1">
-                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🛡️</div>
-                <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Compliance Assured</h3>
+                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🏢</div>
+                <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Retail & Interiors</h3>
                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                  All products meet the highest UK safety and quality standards.
+                  Strategic POS deployment and bespoke architectural space planning for modern commercial environments.
                 </p>
               </div>
           </div>
@@ -101,10 +101,10 @@ const RequestQuote = () => {
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 max-w-5xl mx-auto">
           {/* Call Support */}
-          <a href="tel:+442012345678" className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm">
+          <a href="tel:+447349049077" className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm">
             <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition duration-300">📞</div>
             <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Call Support</h3>
-            <p className="text-gray-400 text-xs sm:text-sm font-semibold">+44 (0) 20 1234 5678</p>
+            <p className="text-gray-400 text-xs sm:text-sm font-semibold">07349049077</p>
           </a>
 
           {/* Gmail/Email */}
