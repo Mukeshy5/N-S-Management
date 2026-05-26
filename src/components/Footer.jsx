@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0c1624] text-white pt-16 sm:pt-20 border-t border-gray-800">
+    <footer className="bg-[#0c1624] text-white pt-12 sm:pt-16 lg:pt-20 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-20 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-20 mb-12 sm:mb-16">
           {/* Column 1: Brand & Identity */}
           <div className="space-y-6">
             <Link to="/" className="inline-block">
@@ -67,8 +67,8 @@ const Footer = () => {
               <div className="flex items-start gap-4">
                 <span className="text-yellow-400 mt-1">📍</span>
                 <div>
-                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Headquarters</p>
-                  <p className="text-sm font-semibold leading-tight">19 Galloway Street, Liverpool, UK, L7 6PD</p>
+                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Registered office address</p>
+                  <p className="text-sm font-semibold leading-tight">19 Galloway Street, Liverpool, United Kingdom, L7 6PD</p>
                 </div>
               </div>
             </div>
@@ -81,8 +81,8 @@ const Footer = () => {
             © 2022 N&S MANAGEMENT LTD. All Rights Reserved. <br className="sm:hidden" /> 
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-gray-500 hover:text-yellow-400 text-[10px] uppercase font-bold tracking-[0.2em] transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-yellow-400 text-[10px] uppercase font-bold tracking-[0.2em] transition-colors">Terms</a>
+            <Link to="/privacy" className="text-gray-400 hover:text-yellow-400 text-xs uppercase font-semibold tracking-wider transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="text-gray-400 hover:text-yellow-400 text-xs uppercase font-semibold tracking-wider transition-colors">Terms</Link>
           </div>
         </div>
       </div>

@@ -8,6 +8,8 @@ import Contact from './pages/Contect' // Filename remains same for now but name 
 import AboutUs from './pages/AboutUs'
 import RequestQuote from './pages/RequestQuote'
 import ScrollToTop from './utils/ScrollToTop'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import Terms from './pages/Terms'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/request-quote" element={<RequestQuote />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
 
       </Routes>

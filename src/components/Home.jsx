@@ -16,15 +16,14 @@ const Home = () => {
         <div className="absolute inset-0 flex items-center z-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 text-white w-full relative z-20 text-center sm:text-left">
             <p className="text-yellow-400 uppercase tracking-widest font-semibold mb-2 sm:mb-4 text-xs sm:text-sm">
-              Construction, Transport and retail, interior design
+              Construction • Transport & Logistics • Retail Solutions • Interior Design
             </p>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight mb-4">
               COMPLETE BUSINESS SOLUTIONS.
               <span className="text-yellow-400 block"> NATIONWIDE SERVICES.</span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-gray-200 max-w-2xl mb-6 mx-auto sm:mx-0">
-              Premier provider of equipment, logistics solutions, and retail management services
-              for construction, transport, retail, and interior design industry professionals.
+              As a premier nationwide provider, we empower industry leaders with high-performance equipment, optimized fleet logistics, and smart retail management systems. From structural materials to bespoke interior architecture, we provide the essential tools and expertise to drive growth and operational efficiency across your entire enterprise.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-5 justify-center sm:justify-start">
               <Link to="/products" className="bg-yellow-400 text-black px-5 sm:px-7 py-3 sm:py-4 rounded font-semibold hover:bg-yellow-300 transition text-sm sm:text-base flex items-center justify-center">
@@ -40,7 +39,7 @@ const Home = () => {
 
       {/* Stats */}
       <section className="bg-[#111827] text-white py-8 sm:py-12 lg:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
           <div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">4+</h2>
             <p className="mt-1 sm:mt-2 text-gray-300 text-xs sm:text-sm">Years Experience</p>
@@ -53,6 +52,7 @@ const Home = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">99%</h2>
             <p className="mt-1 sm:mt-2 text-gray-300 text-xs sm:text-sm">Client Retention</p>
           </div>
+          
           <div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400">24/7</h2>
             <p className="mt-1 sm:mt-2 text-gray-300 text-xs sm:text-sm">Support Available</p>
@@ -89,7 +89,7 @@ const Home = () => {
                   Construction Equipment
                 </h3>
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
-                  Safety gear, tools, and heavy machinery solutions.
+                  High-grade safety equipment, precision power tools, and essential structural materials for professional build sites.
                 </p>
                 <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
                   Explore Products →
@@ -109,7 +109,7 @@ const Home = () => {
                   Transport & Logistics
                 </h3>
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
-                  Fleet management, tracking systems & supply chain solutions.
+                  Advanced fleet tracking, logistical optimization, and end-to-end supply chain management for modern transport.
                 </p>
                 <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
                   Explore Products →
@@ -129,7 +129,7 @@ const Home = () => {
                   Retail Solutions
                 </h3>
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
-                  Point of sale systems, inventory management & store fixtures.
+                  Cutting-edge POS systems, real-time inventory tracking, and custom fixtures designed for high-impact retail environments.
                 </p>
                 <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
                   Explore Products →
@@ -149,7 +149,7 @@ const Home = () => {
                   Interior Design
                 </h3>
                 <p className="text-gray-600 mb-4 sm:mb-5 text-sm sm:text-base">
-                  Professional interior design solutions for commercial and residential spaces.
+                  Bespoke design consulting, premium decor essentials, and professional space planning for residential and commercial excellence.
                 </p>
                 <Link to="/products" className="text-yellow-500 font-semibold text-sm sm:text-base inline-block">
                   Explore Products →

@@ -23,38 +23,38 @@ const Contact = () => {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-20 -mt-10 relative z-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-12 sm:pb-16 lg:pb-20 -mt-8 sm:-mt-10 relative z-20">
         {/* Quick Contact Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16 lg:mb-20">
           {[
             { label: 'Customer Support', value: '+44 (0) 20 1234 5678', sub: 'Mon-Fri 8am-6pm', icon: '📞' },
             { label: 'Email Inquiries', value: 'info@nsmanagement.co.uk', sub: '24/7 Online Support', icon: '✉️' },
-            { label: 'Headquarters', value: '19 Galloway Street, Liverpool L7 6PD', sub: 'Visit us for a coffee', icon: '📍' }
+            { label: 'Registered office address', value: '19 Galloway Street, Liverpool, United Kingdom, L7 6PD', sub: 'Company address', icon: '📍' }
           ].map((item, index) => (
-            <div key={index} className="bg-[#1a2332] p-8 rounded-xl border border-gray-700 shadow-xl hover:border-yellow-400/50 transition-all duration-300 text-center group">
-              <div className="w-14 h-14 bg-yellow-400/10 rounded-2xl flex items-center justify-center text-3xl mb-6 mx-auto text-yellow-400 group-hover:scale-110 transition duration-300">
+            <div key={index} className="bg-[#1a2332] p-6 sm:p-8 rounded-xl border border-gray-700 shadow-xl hover:border-yellow-400/50 transition-all duration-300 text-center group">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-yellow-400/10 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-4 sm:mb-6 mx-auto text-yellow-400 group-hover:scale-110 transition duration-300">
                 {item.icon}
               </div>
-              <h3 className="text-lg font-bold mb-2 group-hover:text-yellow-400 transition">{item.label}</h3>
+              <h3 className="text-base sm:text-lg font-bold mb-2 group-hover:text-yellow-400 transition">{item.label}</h3>
               <p className="font-semibold text-white mb-1 text-sm sm:text-base">{item.value}</p>
               <p className="text-gray-500 text-xs uppercase tracking-wider">{item.sub}</p>
             </div>
           ))}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12">
           {/* Profile Image Section */}
           <div className="lg:col-span-7">
             <img 
               src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1200&auto=format&fit=crop"
               alt="N&S Management Corporate Office"
-              className="w-full h-full min-h-[400px] object-cover rounded-2xl border border-gray-700 shadow-2xl"
+              className="w-full h-full min-h-[300px] sm:min-h-[400px] object-cover rounded-2xl border border-gray-700 shadow-2xl"
             />
           </div>
 
           {/* Contact Info */}
-          <div className="lg:col-span-5 space-y-8">
-            <div className="bg-[#1a2332] p-8 rounded-2xl border border-gray-700">
+          <div className="lg:col-span-5 space-y-6 sm:space-y-8">
+            <div className="bg-[#1a2332] p-6 sm:p-8 rounded-2xl border border-gray-700">
               <h3 className="text-xl font-bold mb-6 text-yellow-400">Operating Hours</h3>
               <div className="space-y-4">
                 {[
@@ -71,18 +71,25 @@ const Contact = () => {
             </div>
 
             {/* Live Map */}
-            <div className="bg-[#1a2332] h-[350px] rounded-2xl border border-gray-700 overflow-hidden relative group">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.118239088654!2d-2.946761023190889!3d53.412850972312686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b213ce60bedfb%3A0xc3b7a59d997f37dd!2s19%20Galloway%20St%2C%20Liverpool%20L7%206PD%2C%20UK!5e0!3m2!1sen!2sin!4v1716634800000!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="19 Galloway Street, Liverpool L7 6PD Map"
-                className="grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
-              ></iframe>
+            <div className="bg-[#1a2332] h-[250px] sm:h-[300px] md:h-[350px] rounded-2xl border border-gray-700 overflow-hidden relative group flex flex-col">
+              <div className="flex-grow relative">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.118239088654!2d-2.946761023190889!3d53.412850972312686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b213ce60bedfb%3A0xc3b7a59d997f37dd!2s19%20Galloway%20St%2C%20Liverpool%20L7%206PD%2C%20UK!5e0!3m2!1sen!2sin!4v1716634800000!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="19 Galloway Street, Liverpool, United Kingdom, L7 6PD Map"
+                  className="absolute inset-0 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                ></iframe>
+              </div>
+              <div className="bg-[#1a2332] p-4 text-center border-t border-gray-700 z-10">
+                <p className="text-[10px] sm:text-xs text-gray-400 uppercase font-bold tracking-widest">Registered office address</p>
+                <p className="text-sm sm:text-base font-semibold text-white my-1">19 Galloway Street, Liverpool, United Kingdom, L7 6PD</p>
+                <p className="text-[10px] sm:text-xs text-gray-400 uppercase font-bold tracking-widest">Company address</p>
+              </div>
             </div>
 
             
