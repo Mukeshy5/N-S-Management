@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Contact = () => {
   return (
     <div className="bg-[#0c1624] text-white min-h-screen pt-20">
@@ -27,18 +25,35 @@ const Contact = () => {
         {/* Quick Contact Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16 lg:mb-20">
           {[
-            { label: 'Customer Support', value: '07349049077', sub: 'Mon-Fri 8am-6pm', icon: '📞' },
-            { label: 'Email Inquiries', value: 'info@nsmanagementltd.co.uk', sub: '24/7 Online Support', icon: '✉️' },
+            { label: 'Customer Support', value: '07349049077', sub: 'Mon-Fri 8am-6pm', icon: '📞', href: 'tel:+447349049077' },
+            { label: 'Email Inquiries', value: 'info@nsmanagementltd.co.uk', sub: '24/7 Online Support', icon: '✉️', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=info@nsmanagementltd.co.uk' },
             { label: 'Registered Address', value: '19 Galloway Street, Liverpool, United Kingdom, L7 6PD', sub: '', icon: '📍' }
           ].map((item, index) => (
-            <div key={index} className="bg-[#1a2332] p-6 sm:p-8 rounded-xl border border-gray-700 shadow-xl hover:border-yellow-400/50 transition-all duration-300 text-center group">
-              <div className="w-12 h-12 sm:w-14 sm:h-14 bg-yellow-400/10 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-4 sm:mb-6 mx-auto text-yellow-400 group-hover:scale-110 transition duration-300">
-                {item.icon}
+            item.href ? (
+              <a
+                key={index}
+                href={item.href}
+                target={item.label === 'Email Inquiries' ? '_blank' : undefined}
+                rel={item.label === 'Email Inquiries' ? 'noreferrer' : undefined}
+                className="bg-[#1a2332] p-6 sm:p-8 rounded-xl border border-gray-700 shadow-xl hover:border-yellow-400/50 transition-all duration-300 text-center group cursor-pointer"
+              >
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-yellow-400/10 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-4 sm:mb-6 mx-auto text-yellow-400 group-hover:scale-110 transition duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-base sm:text-lg font-bold mb-2 group-hover:text-yellow-400 transition">{item.label}</h3>
+                <p className="font-semibold text-white mb-1 text-sm sm:text-base">{item.value}</p>
+                {item.sub && <p className="text-gray-500 text-xs uppercase tracking-wider">{item.sub}</p>}
+              </a>
+            ) : (
+              <div key={index} className="bg-[#1a2332] p-6 sm:p-8 rounded-xl border border-gray-700 shadow-xl hover:border-yellow-400/50 transition-all duration-300 text-center group">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-yellow-400/10 rounded-2xl flex items-center justify-center text-2xl sm:text-3xl mb-4 sm:mb-6 mx-auto text-yellow-400 group-hover:scale-110 transition duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-base sm:text-lg font-bold mb-2 group-hover:text-yellow-400 transition">{item.label}</h3>
+                <p className="font-semibold text-white mb-1 text-sm sm:text-base">{item.value}</p>
+                {item.sub && <p className="text-gray-500 text-xs uppercase tracking-wider">{item.sub}</p>}
               </div>
-              <h3 className="text-base sm:text-lg font-bold mb-2 group-hover:text-yellow-400 transition">{item.label}</h3>
-              <p className="font-semibold text-white mb-1 text-sm sm:text-base">{item.value}</p>
-              {item.sub && <p className="text-gray-500 text-xs uppercase tracking-wider">{item.sub}</p>}
-            </div>
+            )
           ))}
         </div>
 

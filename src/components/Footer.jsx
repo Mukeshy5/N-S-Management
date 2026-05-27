@@ -50,20 +50,20 @@ const Footer = () => {
               Get Support
             </h3>
             <div className="space-y-5">
-              <div className="flex items-start gap-4">
+              <a href="tel:+447349049077" className="flex items-start gap-4 text-left hover:text-yellow-400 transition-colors">
                 <span className="text-yellow-400 mt-1">📞</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Phone Support</p>
                   <p className="text-sm font-semibold">07349049077</p>
                 </div>
-              </div>
-              <div className="flex items-start gap-4">
+              </a>
+              <a href="mailto:info@nsmanagementltd.co.uk" className="flex items-start gap-4 text-left hover:text-yellow-400 transition-colors">
                 <span className="text-yellow-400 mt-1">✉️</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Email Inquiry</p>
                   <p className="text-sm font-semibold truncate underline decoration-yellow-400/30">info@nsmanagementltd.co.uk</p>
                 </div>
-              </div>
+              </a>
               <div className="flex items-start gap-4">
                 <span className="text-yellow-400 mt-1">📍</span>
                 <div>
