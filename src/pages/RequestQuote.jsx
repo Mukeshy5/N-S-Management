@@ -1,5 +1,3 @@
-import React from 'react'
-
 const RequestQuote = () => {
   return (
     <div className="bg-[#0c1624] text-white min-h-screen pt-16 sm:pt-20">
@@ -101,14 +99,19 @@ const RequestQuote = () => {
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-6 max-w-5xl mx-auto">
           {/* Call Support */}
-          <a href="tel:+447349049077" className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm">
+          <a href="tel:+447349049077" className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm cursor-pointer">
             <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition duration-300">📞</div>
             <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Call Support</h3>
             <p className="text-gray-400 text-xs sm:text-sm font-semibold">07349049077</p>
           </a>
 
           {/* Gmail/Email */}
-          <a href="mailto:info@nsmanagementltd.co.uk" className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=info@nsmanagementltd.co.uk"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm cursor-pointer"
+          >
             <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition duration-300">📧</div>
             <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Email Inquiry</h3>
             <p className="text-gray-400 text-xs sm:text-sm font-semibold truncate w-full">info@nsmanagementltd.co.uk</p>
