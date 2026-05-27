@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -57,7 +56,7 @@ const Footer = () => {
                   <p className="text-sm font-semibold">07349049077</p>
                 </div>
               </a>
-              <a href="mailto:info@nsmanagementltd.co.uk" className="flex items-start gap-4 text-left hover:text-yellow-400 transition-colors">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@nsmanagementltd.co.uk" target="_blank" rel="noreferrer" className="flex items-start gap-4 text-left hover:text-yellow-400 transition-colors">
                 <span className="text-yellow-400 mt-1">✉️</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Email Inquiry</p>
