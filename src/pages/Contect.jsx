@@ -28,7 +28,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16 lg:mb-20">
           {[
             { label: 'Customer Support', value: '07349049077', sub: 'Mon-Fri 8am-6pm', icon: '📞' },
-            { label: 'Email Inquiries', value: 'info@nsmanagement.co.uk', sub: '24/7 Online Support', icon: '✉️' },
+            { label: 'Email Inquiries', value: 'info@nsmanagementltd.co.uk', sub: '24/7 Online Support', icon: '✉️' },
             { label: 'Registered Address', value: '19 Galloway Street, Liverpool, United Kingdom, L7 6PD', sub: '', icon: '📍' }
           ].map((item, index) => (
             <div key={index} className="bg-[#1a2332] p-6 sm:p-8 rounded-xl border border-gray-700 shadow-xl hover:border-yellow-400/50 transition-all duration-300 text-center group">

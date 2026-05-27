@@ -108,10 +108,10 @@ const RequestQuote = () => {
           </a>
 
           {/* Gmail/Email */}
-          <a href="mailto:info@nsmanagement.co.uk" className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm">
+          <a href="mailto:info@nsmanagementltd.co.uk" className="bg-[#1a2332] p-6 sm:p-8 rounded-xl sm:rounded-2xl border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group text-center flex flex-col items-center justify-center flex-1 min-w-[280px] max-w-sm">
             <div className="text-3xl sm:text-4xl mb-3 sm:mb-4 group-hover:scale-110 transition duration-300">📧</div>
             <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Email Inquiry</h3>
-            <p className="text-gray-400 text-xs sm:text-sm font-semibold truncate w-full">info@nsmanagement.co.uk</p>
+            <p className="text-gray-400 text-xs sm:text-sm font-semibold truncate w-full">info@nsmanagementltd.co.uk</p>
           </a>
 
          

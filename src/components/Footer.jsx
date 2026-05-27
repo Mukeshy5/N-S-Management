@@ -61,7 +61,7 @@ const Footer = () => {
                 <span className="text-yellow-400 mt-1">✉️</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Email Inquiry</p>
-                  <p className="text-sm font-semibold truncate underline decoration-yellow-400/30">info@nsmanagement.co.uk</p>
+                  <p className="text-sm font-semibold truncate underline decoration-yellow-400/30">info@nsmanagementltd.co.uk</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
