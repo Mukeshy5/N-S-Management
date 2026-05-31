@@ -24,7 +24,7 @@ const RequestQuote = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               {/* Quick Info Card 1 */}
               <div className="bg-[#1a2332] rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-gray-700 shadow-xl hover:border-yellow-400/30 transition-all group">
-                <div className="text-2xl sm:text-3xl mb-2 sm:mb-3">🏗️</div>
+                <div classNam   e="text-2xl sm:text-3xl mb-2 sm:mb-3">🏗️</div>
                 <h3 className="font-bold text-lg sm:text-xl mb-1 sm:mb-2 group-hover:text-yellow-400 transition">Construction & Structural</h3>
                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
                   Specialized structural materials and industrial equipment tailored for site-specific requirements.

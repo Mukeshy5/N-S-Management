@@ -67,7 +67,7 @@ const Footer = () => {
                 <span className="text-yellow-400 mt-1">📍</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Registered Address</p>
-                  <p className="text-sm font-semibold leading-tight">19 Galloway Street, Liverpool, United Kingdom, L7 6PD</p>
+                  <p className="text-sm font-semibold leading-tight">Metcalf Way, Metcalf Way, Crawley, England, RH11 7XX</p>
                 </div>
               </div>
             </div>
