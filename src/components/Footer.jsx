@@ -67,7 +67,7 @@ const Footer = () => {
                 <span className="text-yellow-400 mt-1">📍</span>
                 <div>
                   <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">Registered Address</p>
-                  <p className="text-sm font-semibold leading-tight">Metcalf Way, Metcalf Way, Crawley, England, RH11 7XX</p>
+                  <p className="text-sm font-semibold leading-tight">Unit 2c Sherborne Street, Manchester, M8 8LR</p>
                 </div>
               </div>
             </div>
@@ -82,6 +82,7 @@ const Footer = () => {
           <div className="flex gap-6">
             <Link to="/privacy" className="text-gray-400 hover:text-yellow-400 text-xs uppercase font-semibold tracking-wider transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="text-gray-400 hover:text-yellow-400 text-xs uppercase font-semibold tracking-wider transition-colors">Terms</Link>
+        
           </div>
         </div>
       </div>

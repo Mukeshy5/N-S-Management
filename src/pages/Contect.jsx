@@ -27,7 +27,7 @@ const Contact = () => {
           {[
             { label: 'Customer Support', value: '07349049077', sub: 'Mon-Fri 8am-6pm', icon: '📞', href: 'tel:+447349049077' },
             { label: 'Email Inquiries', value: 'info@nsmanagementltd.co.uk', sub: '24/7 Online Support', icon: '✉️', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=info@nsmanagementltd.co.uk' },
-            { label: 'Registered Address', value: 'Metcalf Way, Metcalf Way, Crawley, England, RH11 7XX', sub: '', icon: '📍' }
+            { label: 'Registered Address', value: 'Unit 2c Sherborne Street, Manchester, M8 8LR', sub: '', icon: '📍' }
           ].map((item, index) => (
             item.href ? (
               <a
@@ -89,20 +89,20 @@ const Contact = () => {
             <div className="bg-[#1a2332] h-[250px] sm:h-[300px] md:h-[350px] rounded-2xl border border-gray-700 overflow-hidden relative group flex flex-col">
               <div className="flex-grow relative">
                 <iframe
-                  src="https://maps.google.com/maps?q=Metcalf%20Way,%20Crawley,%20England,%20RH11%207XX&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=Unit%202c%20Sherborne%20Street,%20Manchester,%20M8%208LR&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Metcalf Way, Metcalf Way, Crawley, England, RH11 7XX Map"
+                  title="Unit 2c Sherborne Street, Manchester, M8 8LR Map"
                   className="absolute inset-0 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
                 ></iframe>
               </div>
               <div className="bg-[#1a2332] p-4 text-center border-t border-gray-700 z-10">
                 <p className="text-[10px] sm:text-xs text-gray-400 uppercase font-bold tracking-widest">Registered Address</p>
-                <p className="text-sm sm:text-base font-semibold text-white my-1">Metcalf Way, Metcalf Way, Crawley, England, RH11 7XX</p>
+                <p className="text-sm sm:text-base font-semibold text-white my-1">Unit 2c Sherborne Street, Manchester, M8 8LR</p>
               </div>
             </div>
 

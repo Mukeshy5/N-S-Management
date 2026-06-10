@@ -24,6 +24,7 @@ const App = () => {
         <Route path="/request-quote" element={<RequestQuote />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
+        
         <Route path="*" element={<h1>404 Not Found</h1>} />
 
       </Routes>
